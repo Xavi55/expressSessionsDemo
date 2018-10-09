@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<style>
+		html
+		{
+			background-image:url('https://media.giphy.com/media/l3q2Cy90VMhfoA9BC/giphy.gif');
+			
+			/*https://media.giphy.com/media/jKYUtseVtLQDLhAd7r/giphy.gif');*/
+			height:100%;
+			background-size:cover;
+			background-repeat:no-repeat;
+		}
+		body
+		{
+			font-family:'Raleway',sans-serif;
+			opacity:.96;
+			border-radius:15px;
+			margin-top:15%;
+			margin-left:20%;
+			margin-right:20%;
+		}
+		#title
+		{
+			text-align:center;
+			color:black;
+			padding-top:.5em;
+		}
+		#newu
+		{
+			text-align:center;
+		}
+		#box
+		{	
+			top:10%;
+		}
+		.form-control
+		{
+			font-size:1em;
+		}
+		.form-control:focus
+		{
+			border:1px black solid;
+		}
+		
+		form
+		{
+			padding: 2% 2% 2% 2%;
+			font-size:1.5em;
+			border-radius:15px;
+		}
+		#gender
+		{
+			margin-right:10%;
+		}
+		#submit
+		{
+			margin-left:35%;
+			width:28%;
+		}
+		#submit:hover
+		{
+			background-color:#4d1ee8;
+			font-size:1em;
+			border:cyan 2px solid;
+		}
+		#submit:active
+		{
+			background-color: black;
+		}
+		#link
+		{
+			text-align:center;
+			
+		}
+	</style>
+	<body>
+		<h2 id=title>Todo Login</h2>
+		<div id=box>
+			<form action='../home' method=post>
+				<div class="form-group">
+				
+					<input type=hidden name=action value=login>
+
+						<label for="fname" class="cols-sm-2 control-label">Email</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+								<input required type="text" class="form-control" name="email" id="name" autofocus/>
+							</div>
+						</div>
+				</div>
+					
+					<div class="form-group">
+						<label for="name" class="cols-sm-2 control-label">Password</label>
+						<div class="cols-sm-10">
+							<div class="input-group">
+								<span 
+class="input-group-addon"><i class="far fa fa-lock" aria-hidden="true"></i></span>
+									<input required 
+type="password" class="form-control" name="pass" id="name" maxlength=15/>
+							</div>
+						</div>
+					</div>
+					
+					<h4 id=link>Want to be a Member?<br> Click <a 
+href=signup.html>here</a> to signup!</h4>
+					<br>
+               <input id=submit type=submit class="btn btn-primary" value 
+=Login>
+               <br>	
+			</form>
+		</div>
+		
+		<!--<h5 id=newu>Are you a new user sign up <a href='signup.html'>here</a>!</h5>
+		-->
+	</body>
+	<script>
+	</script>
+</html>
